@@ -1,0 +1,15 @@
+﻿@model List<Video>
+
+<h1>List Of Videos:</h1>
+
+@foreach (Video videoInfo in Model)
+{
+    <div class="card border-secondary mb-3" style="max-width: 20rem;">
+  <div class="card-header">@videoInfo.VideoTitle</div>
+  <div class="card-body">
+    <h4 class="card-title">
+        <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId">https://www.youtube.com/watch?v=@videoInfo.VideoId</a> 
+    </h4>
+  </div>
+    </div>
+}
